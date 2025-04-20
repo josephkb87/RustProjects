@@ -9,7 +9,7 @@ These Rust Projects showcase application of the Worked Examples.
 ## Projects include;
 
 -- [RustRealWebApp](#)  - A Rust WebApp (A Rust CrossPlatform Web App made with Rust and FastAPI).
-#
+
 -- RustWebApp - A [Rust_WASM WebApp CrossPlatform App](../Projects/RustWebApp/README.md) 
 
 -- QMLApp- [A QT Rust App](../Projects/QMLAppl/README.md) 
@@ -20,7 +20,7 @@ These Rust Projects showcase application of the Worked Examples.
 
 -- Rust_SCM - A [Rust SCM Tool](../Projects/Rust_SCM/README.md).
 
--- Fortran IDE - A [Fortran IDE](../Projects/Fortran IDE/README.md). made with Rust and Bazel.
+-- Fortran IDE - A [Fortran IDE](../Projects/FortranIDE/README.md) made with Rust and Bazel.
 
 #### [Docs](..docs/)
 
