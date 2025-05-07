@@ -8,7 +8,7 @@ These Rust Projects showcase application of the Worked Examples.
 
 #### Projects include;
 
-- [**DocsGen**](##) - A Documentation Generator  made with Rust and OCaml
+- [**DocsGen**](https://github.com/josephkb87/docsgen) - A Documentation Generator  made with Rust and OCaml
 
 #### [Docs](..docs/)
 
