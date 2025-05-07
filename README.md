@@ -1,14 +1,14 @@
-# Rust Projects
-
+## Rust Projects :README.md
+===========================
 Rust is a general-purpose programming language emphasizing performance, type safety, and concurrency. It enforces memory safety, meaning that all references point to valid memory, without a garbage collector. 
 
-## Why
+#### Why
 
 These Rust Projects showcase application of the Worked Examples.
 
-## Projects include;
+#### Projects include;
 
-DocsGen - A Documentation Generator  made with Rust and OCaml
+-- [DocsGen](A Documentation Generator  made with Rust and OCaml)
 
 #### [Docs](..docs/)
 
