@@ -8,19 +8,7 @@ These Rust Projects showcase application of the Worked Examples.
 
 ## Projects include;
 
--- [RustRealWebApp](#)  - A Rust WebApp (A Rust CrossPlatform Web App made with Rust and FastAPI).
-
--- RustWebApp - A [Rust_WASM WebApp CrossPlatform App](../Projects/RustWebApp/README.md) 
-
--- QMLApp- [A QT Rust App](../Projects/QMLAppl/README.md) 
-
---  RustAPI - [A RESTful RustAPI](../Projects/RustAPI/README.md).
-
--- ToDoEmail - A [Rust TO_DO_App](../Projects/ToDoEmail/README.md) that sends a to do list to an email.
-
--- Rust_SCM - A [Rust SCM Tool](../Projects/Rust_SCM/README.md).
-
--- Fortran IDE - A [Fortran IDE](../Projects/FortranIDE/README.md) made with Rust and Bazel.
+DocsGen - A Documentation Generator  made with Rust and OCaml
 
 #### [Docs](..docs/)
 
