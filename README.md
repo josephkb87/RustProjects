@@ -1,10 +1,5 @@
 ## Rust Projects
-
-Rust is a general-purpose programming language emphasizing performance, type safety, and concurrency. It enforces memory safety, meaning that all references point to valid memory, without a garbage collector. 
-
-#### Why
-
-These Rust Projects showcase application of the Worked Examples.
+Rust Projects showcase application of the Worked Examples.
 
 #### Projects include;
 
@@ -28,7 +23,7 @@ These Rust Projects showcase application of the Worked Examples.
 * [About Me](https://github.com/josephkb87)
 * [AUTHORS](../docs/AUTHORS.md)
 * [Rust Worked Examples](https://github.com/josephkb87/Beginners/tree/main/RustWorkedExamples/README.md)
-* [Rust Projects](https://github.com/josephkb87/RustBeginners/tree/main/Projects/README.md)
+* [Rust Projects](https://github.com/josephkb87/RustProjects)
 * [About Rust Beginners](../README.md)
 * [CHANGELOG](../docs/CHANGELOG.md) 
 * [Contribute](../docs/CONTRIBUTING.md)
