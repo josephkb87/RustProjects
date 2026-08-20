@@ -23,7 +23,7 @@ Rust Projects showcase application of the Worked Examples.
 * [About Me](https://github.com/josephkb87)
 * [AUTHORS](../docs/AUTHORS.md)
 * [Rust Worked Examples](https://github.com/josephkb87/Beginners/tree/main/RustWorkedExamples/README.md)
-* [Rust Projects](https://github.com/josephkb87/RustBeginners/tree/main/Projects/README.md)
+* [Rust Projects](https://github.com/josephkb87/RustProjects)
 * [About Rust Beginners](../README.md)
 * [CHANGELOG](../docs/CHANGELOG.md) 
 * [Contribute](../docs/CONTRIBUTING.md)
