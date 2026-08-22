@@ -3,7 +3,7 @@ Rust Projects showcase application of the Worked Examples.
 
 #### Projects include;
 
-- RustWebApp - A [Rust_WASM WebApp CrossPlatform App](../Projects/RustWebApp/README.md) 
+- RustWebApp - A [Rust_WASM WebApp CrossPlatform Tool(Application) for WebSystems Management](../Projects/RustWebApp/README.md) 
 
 - QMLApp- [A QT Rust App](../Projects/QMLAppl/README.md) 
 
@@ -15,7 +15,9 @@ Rust Projects showcase application of the Worked Examples.
 
 - Fortran IDE - A [Fortran IDE](../Projects/Fortran IDE/README.md). made with Rust and Bazel.
 
--- [**DocsGen**](https://github.com/josephkb87/docsgen) - A Documentation Generator made with Rust and OCaml.
+- [**LogoGen**](https://github.com/josephkb87/LogoGen) - A Logo Generator tool(framework) made with Rust.
+- 
+- [**DocsGen**](https://github.com/josephkb87/docsgen) - A Documentation Generator made with Rust and OCaml.
 
 
 #### [Docs](..docs/)
