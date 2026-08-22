@@ -3,7 +3,7 @@ Rust Projects showcase application of the Worked Examples.
 
 #### Projects include;
 
-- RustWebApp - A [Rust_WASM WebApp CrossPlatform Tool(Application) for WebSystems Management](../Projects/RustWebApp/README.md) 
+- RustWebM - A [Rust_WASM WebApp CrossPlatform Tool(Application) for WebSystems Management](../Projects/RustWebApp/README.md) 
 
 - QMLApp- [A QT Rust App](../Projects/QMLAppl/README.md) 
 
