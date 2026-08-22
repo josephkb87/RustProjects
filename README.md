@@ -16,9 +16,8 @@ Rust Projects showcase application of the Worked Examples.
 - Fortran IDE - A [Fortran IDE](../Projects/Fortran IDE/README.md). made with Rust and Bazel.
 
 - [**LogoGen**](https://github.com/josephkb87/LogoGen) - A Logo Generator tool(framework) made with Rust.
-- 
+  
 - [**DocsGen**](https://github.com/josephkb87/docsgen) - A Documentation Generator made with Rust and OCaml.
-
 
 #### [Docs](..docs/)
 
