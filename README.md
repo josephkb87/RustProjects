@@ -11,11 +11,13 @@ Rust Projects showcase application of the Worked Examples.
 
 - ToDoEmail - A [Rust TO_DO_App](../Projects/ToDoEmail/README.md) that sends a to do list to an email.
 
--- Rust_SCM - A [Rust SCM Tool](https://github.com/josephkb87/Rust_SCM/README.md).
+- QRust - A [Rust SCM Tool](https://github.com/josephkb87/QRust/README.md) for Version control Management made with Rust.
 
--- Fortran IDE - A [Fortran IDE](../Projects/Fortran IDE/README.md). made with Rust and Bazel.
+- Fortran IDE - A [Fortran IDE](../Projects/Fortran IDE/README.md). made with Rust and Bazel.
+  
+- [**LogoGen**](https://github.com/josephkb87/LogoGen) - A Simple log Generator made with Rust.
 
--- [**DocsGen**](https://github.com/josephkb87/docsgen) - A Documentation Generator made with Rust and OCaml.
+- [**DocsGen**](https://github.com/josephkb87/docsgen) - A Documentation Generator made with Rust and OCaml.
 
 
 #### [Docs](..docs/)
