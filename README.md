@@ -5,7 +5,9 @@ Rust Projects showcase application of the Worked Examples.
 
 - RustWebM - A [Rust_WASM WebApp CrossPlatform Tool(Application) for WebSystems Management](../Projects/RustWebApp/README.md) 
 
-- QMLApp- [A QT Rust App](../Projects/QMLAppl/README.md) 
+- QMLApp- [A QT Rust App](../Projects/QMLAppl/README.md)
+  
+- BridgesBot- A [Rust Tool for generating Tor Bridges using IPFS](https://github.com/josephkb87/Bridgesbot).
 
 - RustAPI - [A RESTful RustAPI](https://github.com/josephkb87/Rustful_API).
 
