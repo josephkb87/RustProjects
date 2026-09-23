@@ -3170,3 +3170,328 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+
+# =============================================================================
+# RF Systems Integration Cookbook (.gitignore)
+# =============================================================================
+# Multi-language project: Rust · Python · Jupyter · Octave/MATLAB · LaTeX
+# Maintained by the RF-SIC Project Team.
+# Last reviewed: 2026-09-24
+#
+# Organisation:
+#   1. Rust / Cargo
+#   2. Python / PyO3 / Jupyter
+#   3. Octave / MATLAB
+#   4. LaTeX
+#   5. RF data formats (IQ, Touchstone, SigMF, CSV, HDF5)
+#   6. Docker & local CI runners
+#   7. Secrets & environment
+#   8. Coverage & profiling
+#   9. Documentation artefacts
+#  10. Editor / IDE
+#  11. Operating system
+#  12. Project-specific exclusions
+# =============================================================================
+
+
+# -----------------------------------------------------------------------------
+# 1. Rust / Cargo
+# -----------------------------------------------------------------------------
+# Build artefacts for the workspace and per-crate targets.
+/target/
+**/target/
+
+# Rustfmt / rustc backups
+**/*.rs.bk
+*.pdb
+
+# Local Cargo overrides (never commit; each dev sets their own)
+.cargo/config.toml
+.cargo/config
+
+# Cargo incremental build cache
+**/.cargo/
+
+# IMPORTANT: Cargo.lock IS committed because the TUI is a binary crate.
+# Uncomment the next two lines ONLY if a crate is ever converted to a library.
+# Cargo.lock
+# **/Cargo.lock
+
+
+# -----------------------------------------------------------------------------
+# 2. Python / PyO3 / Jupyter
+# -----------------------------------------------------------------------------
+# Bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Packaging / distribution
+build/
+dist/
+*.egg-info/
+*.egg
+.eggs/
+pip-wheel-metadata/
+*.whl
+.maturin/
+
+# Virtual environments (multiple conventions)
+.venv/
+venv/
+env/
+ENV/
+.env.d/
+
+# PyO3 / maturin / setuptools-rust build intermediates
+python-backend/target/
+python-backend/**/*.so
+python-backend/**/*.pyd
+python-backend/**/*.dylib
+python-backend/**/*.dll
+
+# Test / lint / type caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.tox/
+.nox/
+.hypothesis/
+
+# Jupyter
+.ipynb_checkpoints/
+**/.ipynb_checkpoints/
+*.ipynb_checkpoints
+jupyter_config.json
+jupyter_notebook_config.py
+
+# NOTE: We *do* commit .ipynb notebooks with outputs stripped by nbstripout.
+# See .gitattributes section below.
+
+# PyPI / Twine credentials
+.pypirc
+
+
+# -----------------------------------------------------------------------------
+# 3. Octave / MATLAB
+# -----------------------------------------------------------------------------
+*.m~
+*.asv
+*.autosave
+octave-workspace
+*.oct
+*.mat
+# Some .mat files are test fixtures; force-add those explicitly:
+!matlab-octave/tests/fixtures/**/*.mat
+
+
+# -----------------------------------------------------------------------------
+# 4. LaTeX
+# -----------------------------------------------------------------------------
+*.aux
+*.log
+*.out
+*.toc
+*.lof
+*.lot
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.synctex(busy)
+*.bbl
+*.blg
+*.nav
+*.snm
+*.vrb
+*.run.xml
+*.bcf
+*-blx.bib
+docs/latex/*.pdf
+docs/latex/auto/
+docs/latex/*.pdf.sha256
+
+
+# -----------------------------------------------------------------------------
+# 5. RF data formats
+# -----------------------------------------------------------------------------
+# Large IQ recordings — never commit raw captures; store in Zenodo/S3.
+*.iq
+*.iq.tar
+*.wav.iq
+*.complex16
+*.complex32
+
+# SigMF recordings (keep metadata, ignore bulk data)
+*.sigmf-data
+
+# Touchstone / S-parameter files — commit small fixtures, ignore bulk sweeps
+*.s1p
+*.s2p
+*.s3p
+*.s4p
+*.s5p
+*.s6p
+*.snp
+# Keep small reference fixtures under version control:
+!python-backend/tests/fixtures/**/*.s2p
+!docs/examples/**/*.s2p
+
+# RF sweep results / bulk CSV (keep example outputs, ignore generated sweeps)
+python-backend/results/*.csv
+python-backend/results/*.h5
+python-backend/results/*.hdf5
+matlab-octave/results/*.csv
+matlab-octave/results/*.h5
+!python-backend/results/.gitkeep
+!matlab-octave/results/.gitkeep
+
+# Golden reference images are committed (used for visual verification).
+# But intermediate renders are ignored:
+python-backend/results/intermediate/
+matlab-octave/results/intermediate/
+
+
+# -----------------------------------------------------------------------------
+# 6. Docker & local CI runners
+# -----------------------------------------------------------------------------
+.docker/
+docker-compose.override.yml
+
+# nektos/act local GitHub Actions runner
+.actrc
+.act/
+act-artifacts/
+
+# GitHub Actions local cache
+.github/local/
+
+
+# -----------------------------------------------------------------------------
+# 7. Secrets & environment
+# -----------------------------------------------------------------------------
+.env
+.env.*
+!.env.example
+!.env.template
+
+# Keys and certificates
+*.pem
+*.key
+*.p12
+*.pfx
+*.crt
+!docs/keys/*.example.pem
+
+# Secrets directory
+secrets/
+!secrets/.gitkeep
+
+
+# -----------------------------------------------------------------------------
+# 8. Coverage & profiling
+# -----------------------------------------------------------------------------
+.coverage
+.coverage.*
+coverage/
+coverage.xml
+lcov.info
+*.profraw
+*.profdata
+perf.data*
+flamegraph.svg
+cargo-tarpaulin-report.*
+
+
+# -----------------------------------------------------------------------------
+# 9. Documentation artefacts
+# -----------------------------------------------------------------------------
+docs/_build/
+docs/site/
+docs/**/*.tmp
+site/
+_build/
+book/
+
+
+# -----------------------------------------------------------------------------
+# 10. Editor / IDE
+# -----------------------------------------------------------------------------
+# VS Code — keep shared settings, ignore personal ones
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+!.vscode/launch.json
+!.vscode/tasks.json
+
+# JetBrains
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Vim / Neovim
+*.swp
+*.swo
+*.swn
+*~
+.netrwhist
+
+# Emacs
+*#
+.#*
+\#*#
+.\#*
+
+# Helix / Zed / Sublime
+.helix/
+.zed/
+*.sublime-project
+*.sublime-workspace
+
+# Editor temp
+.history/
+*.tmp
+*.bak
+
+
+# -----------------------------------------------------------------------------
+# 11. Operating system
+# -----------------------------------------------------------------------------
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+.AppleDouble
+.LSOverride
+Icon?
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+.fuse_hidden*
+
+
+# -----------------------------------------------------------------------------
+# 12. Project-specific exclusions
+# -----------------------------------------------------------------------------
+# Rust problem binary outputs (generated at runtime)
+rust-backend/output/
+rust-backend/logs/
+
+# Ratatui debug dumps
+*.ratatui-dump
+
+# Release artefacts (published via GitHub Releases / Zenodo)
+release-artifacts/
+rf-sic-*.tar.gz
+rf-sic-*.zip
+
+# Golden image comparison diffs (kept locally only)
+**/golden-diff/
+**/*.diff.png
+
+# Zenodo / DOI metadata drafts
+.zenodo-draft.json
