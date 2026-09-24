@@ -1,0 +1,45 @@
+# =============================================================================
+# RF-SIC .gitattributes
+# =============================================================================
+
+# Normalise line endings
+* text=auto eol=lf
+
+# Explicit text types
+*.rs       text eol=lf
+*.toml     text eol=lf
+*.py       text eol=lf
+*.md       text eol=lf
+*.yml      text eol=lf
+*.yaml     text eol=lf
+*.tex      text eol=lf
+*.m        text eol=lf
+*.json     text eol=lf
+.gitignore text eol=lf
+
+# Binary types — never attempt diff or EOL conversion
+*.iq             binary
+*.sigmf-data     binary
+*.snp            binary
+*.h5             binary
+*.hdf5           binary
+*.mat            binary
+*.pdf            binary
+*.png            binary
+*.jpg            binary
+*.svg            text
+
+# Jupyter notebooks — strip outputs on commit via nbstripout filter
+*.ipynb  filter=nbstripout diff=jupyternotebook merge=jupyternotebook
+*.ipynb  linguist-language=Jupyter
+
+# Cargo.lock — mark as generated, collapse in PRs
+Cargo.lock  linguist-generated=true
+
+# LaTeX-generated PDFs — treat as binary, don't show diff
+docs/latex/*.pdf  binary
+
+# GitHub Linguist overrides — keep RF-SIC stats accurate
+rust-backend/src/**/*.rs   linguist-language=Rust
+python-backend/**/*.py     linguist-language=Python
+matlab-octave/**/*.m       linguist-language=MATLAB
